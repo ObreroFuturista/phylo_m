@@ -1,4 +1,4 @@
-# Recosntrucción de un árbol de inferencia bayesiana 
+# Reconstrucción de un árbol de inferencia bayesiana 
 
 La inferencia bayesiana de árboles filogenéticos es un método estadístico que utiliza el teorema de Bayes para reconstruir 
 las relaciones evolutivas entre especies o genes, integrando la incertidumbre de manera explícita. Este enfoque combina 
