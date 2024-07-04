@@ -8,3 +8,6 @@ de Monte Carlo por cadena de Markov (MCMC), se muestrean posibles árboles para 
 Esto resulta en una representación probabilística de las posibles relaciones evolutivas, proporcionando una evaluación 
 más robusta de la incertidumbre en la filogenia inferida.
 
+Actualiza la probabilidad de una hipótesis a medida que se dispone de más evidencia o información.
+
+
