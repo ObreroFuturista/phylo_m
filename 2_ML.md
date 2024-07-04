@@ -25,3 +25,23 @@ RAxML utiliza alineamientos en formato phyllip. Así que usamos la misma matriz 
 
 Podemos convertir el archivo nexus a phyllip en la sigueinte [liga](https://sequenceconversion.bugaco.com/converter/biology/sequences/) 
 ![image](https://github.com/ObreroFuturista/phylo_m/assets/32031932/d08ae5e3-25aa-4fe9-b8e7-2172947ba120)
+
+Con el archivo phyllip y los ejecutables de RAxML podemos correr una análisis completo (Búsqueda del mejor árbol y calcular los valiores de bootstrap)
+con el siguiente comando. 
+
+>raxmlHPC -f a -m GTRGAMMA -p 12345 -x 12345 -# 100 -s dna.phy -n T20
+
+
+-f a: Búsqueda de árbol de arranque (bootstrap search) seguida de una búsqueda de la mejor máxima verosimilitud (ML) y un análisis del árbol de consenso. 
+
+-m GTRGAMMA: Modelo de sustitución de nucleótidos a utilizar. Modelo GTR (General Time Reversible) con la corrección GAMMA para la heterogeneidad de tasas entre sitios.
+
+-p 12345: Semilla para el generador de números aleatorios utilizado en la búsqueda de la máxima verosimilitud. Reproducibilidad de los resultados.
+
+-x 12345: Semilla para el generador de números aleatorios utilizado en el análisis bootstrap. 
+
+-# 100: Réplicas bootstrap.
+
+-s dna.phy: Alineamiento en formato PHYLIP.
+
+-n test: Proporciona un nombre (test) para el trabajo.
