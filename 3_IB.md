@@ -32,8 +32,8 @@ La cuestión es que Mr Bayes no implementa todos los modelos evaluados, solo [es
 Al final del archivo Nexus agregamos este bloque 
 
 
-begin mrbayes;
-outgroup 259CvaGUA;
+	begin mrbayes;
+	outgroup 259CvaGUA;
 
 	charset Subset1 = 1-626;
 
@@ -42,8 +42,8 @@ outgroup 259CvaGUA;
 
 	lset applyto=(1) nst=6 rates=invgamma;
 
-mcmc ngen=1000000 temp=0.2 printfreq=1000 samplefreq=1000 nruns=2 nchains=4 savebrlens=yes burninfrac=0.25;
-sump;
-sumt contype=halfcompat;
-quit;
-end;
+	mcmc ngen=1000000 temp=0.2 printfreq=1000 samplefreq=1000 nruns=2 nchains=4 savebrlens=yes burninfrac=0.25;
+	sump;
+	sumt contype=halfcompat;
+	quit;
+	end;
