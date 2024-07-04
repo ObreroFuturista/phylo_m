@@ -44,7 +44,7 @@ En el menu superior seleccionan la pestaña **Aligment** y le indican al program
 
 Ya tienen el alineamiento. 
 ![image](https://github.com/ObreroFuturista/phylo_m/assets/32031932/d5bc3148-4839-4c0f-b8b6-3c4e49e9b848)
-Lo guardan en su computadora. 
+Lo guardan en su computadora en formato de MEGA o en Nexus. El Nexus lo usaremos más adelante.  
 
 
 El archivo alineado permanece en abierto en Mega, pero como archivo de datos. Cambiamos a la ventana del programa y arrastramos el archivo que recien guardamos. El boton de Phylogeny se selecciona Neighbour Joining
