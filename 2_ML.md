@@ -51,3 +51,13 @@ con el siguiente comando.
 ![image](https://github.com/ObreroFuturista/phylo_m/assets/32031932/200fe346-1f99-4a4b-8af5-312c6d30c90e)
 
 
+Cuando termina el análisis se han generado diversos archivos. Contienen la información sobre las corridas de boostrap y la busqueda del mejor árbol.
+El mejor árbol, con valores de soporte de bootstrap es el archivo RAxML_bipartitions.*nombre de corrida*
+Se puede visualizar en Figtree
+
+![image](https://github.com/ObreroFuturista/phylo_m/assets/32031932/2e24879c-f260-46c7-92ce-58dab1e39c3d)
+
+
+
+
+
