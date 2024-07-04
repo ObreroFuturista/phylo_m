@@ -45,3 +45,9 @@ con el siguiente comando.
 -s dna.phy: Alineamiento en formato PHYLIP.
 
 -n test: Proporciona un nombre (test) para el trabajo.
+
+![image](https://github.com/ObreroFuturista/phylo_m/assets/32031932/c6b3b2cf-dbb0-4cb2-9b75-71bd2b9211d8)
+
+![image](https://github.com/ObreroFuturista/phylo_m/assets/32031932/200fe346-1f99-4a4b-8af5-312c6d30c90e)
+
+
