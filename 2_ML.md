@@ -57,6 +57,9 @@ Se puede visualizar en Figtree
 
 ![image](https://github.com/ObreroFuturista/phylo_m/assets/32031932/2e24879c-f260-46c7-92ce-58dab1e39c3d)
 
+En Figtree los valores de soporte se pueden visualizar activando la casilla de Node Labes, y seleccionando Display label
+
+![image](https://github.com/ObreroFuturista/phylo_m/assets/32031932/695d1be3-0ec0-4f66-8e8b-0eb593a665c0)
 
 
 
