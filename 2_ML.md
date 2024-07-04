@@ -21,3 +21,7 @@ nucleótidos y aminoácidos. RAxML permite la paralelización para optimizar el 
 ![image](https://github.com/ObreroFuturista/phylo_m/assets/32031932/ef8bb55f-b204-44b4-8d59-4c7b23ae60da)
 
 Descargar [RAxML](https://github.com/stamatak/standard-RAxML)
+RAxML utiliza alineamientos en formato phyllip. Así que usamos la misma matriz que alineamos en Mega, pero pero en formato phyllip. 
+
+Podemos convertir el archivo nexus a phyllip en la sigueinte [liga](https://sequenceconversion.bugaco.com/converter/biology/sequences/) 
+![image](https://github.com/ObreroFuturista/phylo_m/assets/32031932/d08ae5e3-25aa-4fe9-b8e7-2172947ba120)
