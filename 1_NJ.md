@@ -1,4 +1,4 @@
-#   Reonstruccion de un árbol de Neighbour Joining en MEGA
+#   Reconstruccion de un árbol de Neighbour Joining en MEGA
 
 El algoritmo de Neighbor-Joining (NJ), desarrollado por Saitou y Nei en 1987, se utiliza para generar 
 un "árbol filogenético" único, que no necesariamente representa la historia evolutiva del grupo.
