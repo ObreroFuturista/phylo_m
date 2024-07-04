@@ -68,6 +68,6 @@ Listo!
 Hay dos árboles. El de distancias y que nos interesa está en la pestaña **Original tree**. En la pestaña **Bootstrap consensus Tree** esta el árbol de 
 las corridas para calcular los valores de bootstrap. Los valores en los nodos son los mismos que en el árbol de la primera pestaña. 
 
-En [Figtree](http://tree.bio.ed.ac.uk/software/figtree/) tendrás más opciones de visualización y edición del árbol. 
+Pueden usar el programa [Figtree](http://tree.bio.ed.ac.uk/software/figtree/) para más opciones de visualización y edición del árbol. 
 ![image](https://github.com/ObreroFuturista/phylo_m/assets/32031932/1069566b-b034-426c-aae1-35df144c6f34)
 
