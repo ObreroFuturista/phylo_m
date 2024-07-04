@@ -27,3 +27,25 @@ Obtenemos una lista con lo modelos más idóneos de mayor a menor según diferen
 
 
 La cuestión es que Mr Bayes no implementa todos los modelos evaluados, solo [estos](archivos/mr_bayes.modelos.txt)
+}
+
+Al final del archivo Nexus agregamos este bloque 
+
+>begin mrbayes;
+>    outgroup 259CvaGUA;    [Define el outgroup para la raíz del árbol filogenético.]
+>
+>    charset Subset1 = 1-626;    [Define un subconjunto de caracteres que van de la posición 1 a la 626.]
+>
+>
+>    partition PartitionFinder = 1:Subset1;    [Define una partición llamada PartitionFinder que incluye el >subconjunto Subset1.]
+>
+> set partition=PartitionFinder;    [Establece PartitionFinder como la partición activa.]
+>
+>    
+>    sump;    [Resume los parámetros del MCMC.]
+>
+>    sumt contype=halfcompat;    [Resume los árboles con un tipo de consenso de mayoría simple (50%).]
+>    
+>    quit;
+>
+>end;
