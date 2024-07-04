@@ -13,12 +13,12 @@ las dos secuencias. Para seleccionar las secuencias con la menor distancia gené
 elegir las secuencias más similares, es necesario construir una matriz de distancias estándar entre todas las
 posibles combinaciones de secuencias.
 
+![image](https://github.com/ObreroFuturista/phylo_m/assets/32031932/1c0b7774-adfe-45cd-9d3b-6c28d396f5c5)
+
 > [!NOTE]
-> Es una aproximación para explorar los datos. Recordar que no incluye información sobre modelos de evolución molecular.  
+> Es una aproximación para explorar los datos. Recordar que no incluye información sobre modelos de evolución molecular.
+
+## Construcción de un árbol NJ en Mega
 
 
-
-
-
-
-
+Descargar el [Alineamiento](archivos/COI_sn_sh.fasta)
