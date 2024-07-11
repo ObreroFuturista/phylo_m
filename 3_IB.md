@@ -26,17 +26,20 @@ Obtenemos una lista con lo modelos más idóneos de mayor a menor según diferen
 ![image](https://github.com/ObreroFuturista/phylo_m/assets/32031932/7242d69e-7dc9-4b62-9bae-111627b2ca06)
 
 
-La cuestión es que Mr Bayes no implementa todos los modelos evaluados, solo [estos](archivos/mr_bayes.modelos.txt)
+Mr Bayes no implementa todos los modelos evaluados, solo [estos](archivos/mr_bayes.modelos.txt)
 
+Vamos a utilizar el modelo de los implmentados por MrBayes con el valor mas alto de BIC (Bayesian information criterion), en este caso HKY +G
 
 Al final del archivo Nexus agregamos este bloque 
+
+	[iniciar MrBayes]
 
 	begin mrbayes;
 
 	[Definir el grupo externo para enraizar el árbol]
 	outgroup 259CvaGUA;
 
-	[Definir un subconjunto de caracteres del alineamiento, aquí del 1 al 626]
+	[Subconjunto de caracteres del alineamiento, aquí del 1 al 626]
 	charset Subset1 = 1-626;
 
 	[Crear una partición denominada PartitionFinder que contiene el subconjunto definido]
@@ -45,10 +48,10 @@ Al final del archivo Nexus agregamos este bloque
 	[Aplicar la configuración de la partición definida]
 	set partition=PartitionFinder;
 
-	[Establecer el modelo de sustitución y las tasas evolutivas para la partición: nst=6 (GTR), rates=invgamma]
-	lset applyto=(1) nst=6 rates=invgamma;
+	[Establecer el modelo de sustitución HKY + G]
+	lset applyto=() nst=2 rates=gamma;         
 
-	[Configurar la cadena de Markov para la inferencia bayesiana: ngen=1000000 (generaciones), temp=0.2, printfreq=1000, samplefreq=1000, nruns=2, nchains=4, savebrlens=yes, burninfrac=0.25]
+	[Configurar la cadena de Markov para la inferencia bayesiana: 10000000 (generaciones), Dos corridas, con cuatro cadenas]
 	mcmc ngen=1000000 temp=0.2 printfreq=1000 samplefreq=1000 nruns=2 nchains=4 savebrlens=yes burninfrac=0.25;
 
 	[Resumir las estadísticas de los parámetros]
@@ -60,3 +63,5 @@ Al final del archivo Nexus agregamos este bloque
 	[Finalizar el bloque de comandos de MrBayes]
 	quit;
 	end;
+
+
