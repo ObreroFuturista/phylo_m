@@ -32,35 +32,18 @@ Vamos a utilizar el modelo de los implmentados por MrBayes con el valor mas alto
 
 Al final del archivo Nexus agregamos este bloque 
 
-	[iniciar MrBayes]
-
 	begin mrbayes;
-
-	[Definir el grupo externo para enraizar el árbol]
 	outgroup 259CvaGUA;
 
-	[Subconjunto de caracteres del alineamiento, aquí del 1 al 626]
 	charset Subset1 = 1-626;
-
-	[Crear una partición denominada PartitionFinder que contiene el subconjunto definido]
 	partition PartitionFinder = 1:Subset1;
-
-	[Aplicar la configuración de la partición definida]
 	set partition=PartitionFinder;
 
-	[Establecer el modelo de sustitución HKY + G]
-	lset applyto=() nst=2 rates=gamma;         
-
-	[Configurar la cadena de Markov para la inferencia bayesiana: 10000000 (generaciones), Dos corridas, con cuatro cadenas]
+	lset applyto=(1) nst=2 rates=gamma;         
 	mcmc ngen=1000000 temp=0.2 printfreq=1000 samplefreq=1000 nruns=2 nchains=4 savebrlens=yes burninfrac=0.25;
 
-	[Resumir las estadísticas de los parámetros]
 	sump;
-
-	[Resumir los árboles obtenidos y construir el árbol de consenso]
 	sumt contype=halfcompat;
-
-	[Finalizar el bloque de comandos de MrBayes]
 	quit;
 	end;
 
