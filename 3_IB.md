@@ -28,9 +28,10 @@ Obtenemos una lista con lo modelos más idóneos de mayor a menor según diferen
 
 Mr Bayes no implementa todos los modelos evaluados, solo [estos](archivos/mr_bayes.modelos.txt)
 
-Vamos a utilizar el modelo de los implmentados por MrBayes con el valor mas alto de BIC (Bayesian information criterion), en este caso HKY +G
+Vamos a utilizar el modelo de los implmentados por MrBayes con el valor mas alto de BIC (Bayesian information criterion), en este caso HKY+G
 
-Al final del archivo Nexus agregamos este bloque 
+Al final del archivo Nexus agregamos este bloque. En este bloque indicamos la inicialización de MrBayes, establecemos una partición y con *lset* establecemos el modelo. Indicamos que 
+el análisis correra por 10,000,000 de generaciones, con dos corridas y cuatro cadenas de Markov, y hacer un resumen de los parametros y árboles obtenidos. 
 
 	begin mrbayes;
 	outgroup 259CvaGUA;
