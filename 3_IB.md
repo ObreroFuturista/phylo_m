@@ -31,19 +31,32 @@ La cuestión es que Mr Bayes no implementa todos los modelos evaluados, solo [es
 
 Al final del archivo Nexus agregamos este bloque 
 
-
 	begin mrbayes;
+
+	[Definir el grupo externo para enraizar el árbol]
 	outgroup 259CvaGUA;
 
+	[Definir un subconjunto de caracteres del alineamiento, aquí del 1 al 626]
 	charset Subset1 = 1-626;
 
+	[Crear una partición denominada PartitionFinder que contiene el subconjunto definido]
 	partition PartitionFinder = 1:Subset1;
+
+	[Aplicar la configuración de la partición definida]
 	set partition=PartitionFinder;
 
+	[Establecer el modelo de sustitución y las tasas evolutivas para la partición: nst=6 (GTR), rates=invgamma]
 	lset applyto=(1) nst=6 rates=invgamma;
 
+	[Configurar la cadena de Markov para la inferencia bayesiana: ngen=1000000 (generaciones), temp=0.2, printfreq=1000, samplefreq=1000, nruns=2, nchains=4, savebrlens=yes, burninfrac=0.25]
 	mcmc ngen=1000000 temp=0.2 printfreq=1000 samplefreq=1000 nruns=2 nchains=4 savebrlens=yes burninfrac=0.25;
+
+	[Resumir las estadísticas de los parámetros]
 	sump;
+
+	[Resumir los árboles obtenidos y construir el árbol de consenso]
 	sumt contype=halfcompat;
+
+	[Finalizar el bloque de comandos de MrBayes]
 	quit;
 	end;
