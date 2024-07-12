@@ -50,8 +50,22 @@ el análisis correra por 10,000,000 de generaciones, con dos corridas y cuatro c
 
 [Aquí pueden ver el alineamiento en nexus con los comandos.](archivos/COI_Ali_comandos.nexus)
 
+Si descargan los executables de Windows deben tener un carpeta con estos archivos
+
 Por cuestiones de conversión, en la linea donde que dice  *datatype=nucleotide;* cambiar a *datatype=dna;*
 
 ### Descargar MrBayes 
 
 Descargar MrBayes desde este [sitio](https://nbisweden.github.io/MrBayes/download.html)
+
+Tendrán una carpeta como esta. En la carpeta *bin* estan los .exe necesarios, pueden usar cualquiera
+![image](https://github.com/user-attachments/assets/1ee0e417-578c-49ee-a134-00a7d119e966)
+
+De manera similar a RAxML, abren MrBayes a con la línea de comandos, a través del símbolo del sistema. (Cambiarán las rutas en sus PCs)
+![image](https://github.com/user-attachments/assets/61da8eb6-c8ae-417b-b6bb-0cee51cef02e)
+
+
+Al ejecutar MrBayes aparece este texto
+![image](https://github.com/user-attachments/assets/9844d0cb-11a7-4142-ab27-6233c2067655)
+
+
