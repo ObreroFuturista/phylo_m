@@ -69,3 +69,10 @@ Al ejecutar MrBayes aparece este texto
 ![image](https://github.com/user-attachments/assets/9844d0cb-11a7-4142-ab27-6233c2067655)
 
 
+Para correr el análisis tecleamos *execute* y la ruta del archivo nexus. 
+![image](https://github.com/user-attachments/assets/e54f1d3c-f7ac-4695-b42d-1ab3b7ac2706)
+
+Listo. Está corriendo. 
+![image](https://github.com/user-attachments/assets/180ade32-2dbe-4ea9-ace1-d5821e92250e)
+
+Se crearán varios archivos. El árbol de inferencia bayesiana tendrá la extensión **.con.tre**
