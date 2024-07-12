@@ -48,4 +48,10 @@ el análisis correra por 10,000,000 de generaciones, con dos corridas y cuatro c
 	quit;
 	end;
 
+[Aquí pueden ver el alineamiento en nexus con los comandos.](archivos/COI_Ali_comandos.nexus)
 
+Por cuestiones de conversión, en la linea donde que dice  *datatype=nucleotide;* cambiar a *datatype=dna;*
+
+### Descargar MrBayes 
+
+Descargar MrBayes desde este [sitio](https://nbisweden.github.io/MrBayes/download.html)
